@@ -25,7 +25,7 @@
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden;}
 
   body {
     font-family: 'DM Sans', sans-serif;
@@ -573,6 +573,18 @@
     .review-card { flex: 0 0 100%; }
   }
   @media (max-width: 768px) {
+        .hero-content { 
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+            grid-template-columns: 1fr; gap: 2rem;
+         }
+    .nav-cta{
+        padding: 10px;
+        font-size: 11px;
+        font-weight: 200;
+    }
     .nav-links { display: none; }
     .hamburger { display: flex; }
     .form-row { grid-template-columns: 1fr; }
